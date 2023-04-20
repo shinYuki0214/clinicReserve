@@ -7,7 +7,7 @@ export default defineConfig({
             input: [
                 'resources/css/app.css',
                 'resources/js/app.js',
-                'resources/css/flatpickr.js',
+                'resources/js/flatpickr.js',
             ],
             refresh: true,
         }),
