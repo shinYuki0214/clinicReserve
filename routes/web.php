@@ -32,10 +32,10 @@ Route::middleware('auth')->group(function () {
 
 Route::middleware('auth')->group(function(){
     Route::get('/', [ClinicController::class, 'index'])->name('clinic.index');
-    Route::get('/config', [ClinicController::class, 'create'])->name('clinic.create');
-    Route::get('/config/confirm', [ClinicController::class, 'confirm'])->name('clinic.confirm');
+    Route::get('/setting', [ClinicController::class, 'create'])->name('clinic.create');
+    Route::get('/setting/confirm', [ClinicController::class, 'confirm'])->name('clinic.confirm');
     Route::post('/', [ClinicController::class, 'store'])->name('clinic.store');
-    Route::post('/config/confirm', [ClinicController::class, 'update'])->name('clinic.update');
+    Route::post('/setting/confirm', [ClinicController::class, 'update'])->name('clinic.update');
     Route::get('/reserve', [ClinicController::class, 'reservation'])->name('clinic.reservation');
 });
 
