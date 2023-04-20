@@ -32,7 +32,7 @@ class FormMail extends Mailable
     public function envelope()
     {
         return new Envelope(
-            from: new Address('sin2021@outlook.jp', '岩田真次郎'),
+            from: new Address('clinicreserve@web-laravel-shin.com', '岩田真次郎'),
             subject: 'ご予約を承りました。',
         );
     }
